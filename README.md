@@ -2,6 +2,8 @@
 
 Interaktive Streamlit-Lehrapp für die grobe Abschätzung von Lackverbrauch, Lackverlusten und Kosten. Gestaltung und Hochschullogo orientieren sich an [temperaturprofil_forward](https://github.com/dubbehendrik/temperaturprofil_forward).
 
+**Live-App:** [lackverbrauch-rechner.streamlit.app](https://lackverbrauch-rechner.streamlit.app/)
+
 ## Streamlit Community Cloud
 
 - **Python-Version: 3.11** (unter „Advanced settings“ auswählen)
