@@ -148,6 +148,11 @@ def number(key, label, step=1.0, minimum=0.0, maximum=None, decimals=3, help=Non
 
 def main():
     st.set_page_config(page_title="Lackverbrauch-Rechner", layout="wide")
+    st.markdown("""<style>
+    [data-testid="stMetricValue"] {font-size:clamp(1rem, 2vw, 2rem); white-space:normal;}
+    [data-testid="stMetricValue"] > div {white-space:normal; overflow:visible; text-overflow:clip;}
+    [data-testid="stMetricLabel"] p {white-space:normal; overflow:visible; text-overflow:clip;}
+    </style>""", unsafe_allow_html=True)
     for key, value in DEFAULTS.items():
         st.session_state.setdefault(key, value)
     for key, value in dict(scenarios=[], keep=True, scenario_name="", chart=CHARTS[0], chart_period="Jahr").items():
